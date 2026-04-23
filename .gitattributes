@@ -1,3 +1,2 @@
-# Hide data generator from language stats
-src/db_builder.py linguist-detectable=false
-data/*.db linguist-detectable=false
+src/db_builder.py linguist-vendored
+*.sql linguist-detectable=true
