@@ -9,7 +9,7 @@ This project is a deep-dive into **Business Intelligence (BI)** using SQL. I sim
 To audit the health of a subscription business by answering 10+ core strategic questions ranging from **Revenue Concentration (Pareto Analysis)** to **Cohort Retention**.
 
 ## 🛠️ Data Infrastructure
-The analysis is performed on a 4-table relational schema:
+The analysis is performed on a 4-table relational schema (MySQL/PostgreSQL compatible):
 - `users`: Customer demographic and acquisition channel data.
 - `plans`: Tiered pricing structures (Basic, Pro, Enterprise).
 - `subscriptions`: Life-cycle tracking (Signup to Churn).
