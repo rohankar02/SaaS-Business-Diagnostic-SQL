@@ -3,8 +3,11 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
+from pathlib import Path
+
 def generate_saas_db():
-    conn = sqlite3.connect('/Users/rohankar/.gemini/antigravity/scratch/SQL-Business-Diagnostic/data/saas_data.db')
+    db_path = Path(__file__).parent.parent / 'data' / 'saas_data.db'
+    conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
     # 1. Users Table
